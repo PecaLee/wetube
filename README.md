@@ -1,12 +1,16 @@
 # WeTube Clone coding
 
 - node.js
+  - import, export
 - babel
 - nodemon
 - express
-  - import express
-  - app.get()
+  - app
+    - app.use()
+    - app.get()
+    - middleware
+    - morgan - middleware lib (logger)
+    - controllers
   - request
   - response
-  - middleware
-  - app.use()
+  - routers

@@ -1,25 +1,21 @@
-"use strict";
-
 import express from "express";
+import morgan from "morgan";
+
+import globalRouter from "./routers/globalRouter";
+import videoRouter from "./routers/videoRouter";
+import userRouter from "./routers/userRouters";
 
 const PORT = 4000;
+
 const app = express();
+const logger = morgan("dev");
+app.use(logger);
 
-const pathLogger = (req, res, next) => {
-  console.log("PATH : ", req.path);
-  next();
-};
-
-const methodLogger = (req, res, next) => {
-  console.log("Method : ", req.method);
-  next();
-};
-
-const home = (req, res) => res.send("<h1>Hello Home</h1>");
-
-app.use(methodLogger, pathLogger);
-app.get("/", home);
+app.use("/", globalRouter);
+app.use("/videos", videoRouter);
+app.use("/users", userRouter);
 
 const handleListening = () =>
   console.log(`Server listening on port http://localhost:${PORT} 🚀`);
+
 app.listen(PORT, handleListening);
