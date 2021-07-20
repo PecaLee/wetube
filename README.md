@@ -4,6 +4,9 @@
   - import, export
 - babel
 - nodemon
+- eslint
+- prettier
+- regex - 정규식
 - express
   - app
     - app.use()
@@ -14,3 +17,4 @@
   - request
   - response
   - routers
+    - req.params
