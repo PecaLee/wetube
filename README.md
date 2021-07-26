@@ -18,3 +18,8 @@
   - response
   - routers
     - req.params
+- pug
+  - include
+  - extends
+  - 변수
+  - 자바스크립트 사용
