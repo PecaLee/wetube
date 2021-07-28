@@ -10,12 +10,22 @@
 - express
   - app
     - app.use()
+      - middleware
+      - app.use(express.urlencoded({ extended: true }))
+        - POST의 변수를 가져올 수 있게 해 준다.
     - app.get()
+    - app.post()
     - middleware
     - morgan - middleware lib (logger)
     - controllers
   - request
+    - req.params
+    - req.body
   - response
+    - res.send
+    - res.end
+    - res.redirect
+    - res.render
   - routers
     - req.params
 - pug
@@ -55,3 +65,9 @@
 
       +mixinName(data)
       ```
+
+- HTTP form
+  - action
+  - method
+    - GET
+    - POST
