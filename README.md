@@ -1,5 +1,11 @@
 # WeTube Clone coding
 
+- javascript
+
+  - promise
+  - async, await
+  - try, catch
+
 - node.js
   - import, export
 - babel
@@ -7,6 +13,7 @@
 - eslint
 - prettier
 - regex - 정규식
+  - https://www.regexpal.com/
 - express
   - app
     - app.use()
@@ -21,6 +28,7 @@
   - request
     - req.params
     - req.body
+    - req.query
   - response
     - res.send
     - res.end
@@ -74,5 +82,15 @@
     - POST
 
 - MongoDB
+  - M1: mongod --config /opt/homebrew/etc/mongod.conf --fork
 - mongoose
+  - connect
   - scheme
+  - create
+  - find
+    - find with regex
+  - findById
+  - findByIdAndUpdate
+  - findByIdAndDelete
+  - middleware
+  - sort
