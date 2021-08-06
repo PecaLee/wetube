@@ -34,6 +34,7 @@
     - res.end
     - res.redirect
     - res.render
+    - res.status
   - routers
     - req.params
 - pug
