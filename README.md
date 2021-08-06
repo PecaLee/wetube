@@ -89,8 +89,11 @@
   - create
   - find
     - find with regex
+    - query
   - findById
   - findByIdAndUpdate
   - findByIdAndDelete
   - middleware
   - sort
+- hashing password
+  - bcrypt
