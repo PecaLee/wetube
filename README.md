@@ -35,6 +35,7 @@
     - res.redirect
     - res.render
     - res.status
+    - res.locals (pug can access locals)
   - routers
     - req.params
 - pug
@@ -97,4 +98,9 @@
   - middleware
   - sort
 - hashing password
+
   - bcrypt
+
+- session, cookies
+  - express-session
+  -

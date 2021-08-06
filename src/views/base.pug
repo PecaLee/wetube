@@ -13,8 +13,16 @@ html(lang="ko")
                         a(href="/videos/upload") Upload Video
                     li 
                         a(href="/search") Search
-                    li 
-                        a(href="/join") Join 
+                    if loggedIn 
+                        li 
+                            a(href="/logout") Log Out 
+                        li 
+                            a(href="/my-profile") #{loggedInUser.name}'s profile 
+                    else
+                        li 
+                            a(href="/join") Join 
+                        li 
+                            a(href="/login") Login 
                     
             h1=pageTitle
         main
